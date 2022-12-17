@@ -1,0 +1,12 @@
+type User {
+    userId :ID!
+    name :String
+    fatherName:String
+    address :String
+
+}
+
+type Query {
+    getAllUsers:[User]
+    findUserById(userId:Int):User
+}
